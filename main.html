@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">MY Portfolio</a>
+
+              
+
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#publication">Publication</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                   <!-- theme toggle button -->
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="profile-circle pulse-animation">
+                    <img src="mypic.jpg" alt="Profile Picture">
+                </div>
+                <div class="hero-text">
+                    <h1 class="slide-in-left">Hi, I'm <span class="highlight"> Blazious </span></h1>
+                    <p class="slide-in-right">Full Stack Developer | System Engineer | Automation Specialist</p>
+                    <a href="#projects" class="btn float-animation">View My Work <i class="fas fa-arrow-down"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <p>I'm a passionate developer with expertise in building secure, scalable applications and
+                        automating complex workflows. With a background in system engineering, I bring a unique
+                        perspective to software development that emphasizes reliability and efficiency.</p>
+                    <p>My approach combines technical excellence with user-centered design to create solutions that not
+                        only work well but also provide exceptional user experiences.</p>
+                    <div class="tech-stack">
+                        <span class="tech-item pop-in" style="--delay: 0.1s">JavaScript</span>
+                        <span class="tech-item pop-in" style="--delay: 0.2s">Python</span>
+                        <span class="tech-item pop-in" style="--delay: 0.4s">Docker</span>
+                        <span class="tech-item pop-in" style="--delay: 0.5s">AWS</span>
+                        <span class="tech-item pop-in" style="--delay: 0.6s">postgreSQL</span>
+                        <span class="tech-item pop-in" style="--delay: 0.7s">HTML/CSS</span>
+                        <span class="tech-item pop-in" style="--delay: 0.8s">Automation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="app">Apps</button>
+                <button class="filter-btn" data-filter="website">Websites</button>
+            </div>
+            <div class="projects-grid">
+                <!-- App Projects -->
+                <div class="project-card" data-category="app">
+                    <div class="project-img">
+                        <img src="gatepass.png"
+                            alt="Gatepass App">
+                    </div>
+                    <div class="project-info">
+                        <h3>Gatepass App</h3>
+                        <p>A system that allows companies to track items leaving their premises with intergrated  approval worflows .</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Blazious/GATEPASS-FRONT-END-" class="btn">💻 View Code</a>
+                            <a href="gatepass.mp4" class="btn btn-outline" target="_blank">🎥 Watch Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="app">
+                    <div class="project-img">
+                        <img src="daraja.png"
+                            alt="Daraja App">
+                    </div>
+                    <div class="project-info">
+                        <h3>Daraja App</h3>
+                        <p>Mobile payment solution integrating M-Pesa STK push with a user-friendly interface and
+                            real-time transaction tracking.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Blazious/Daraja-bmm" class="btn">💻 View Code</a>
+                            <a href="daraja.mp4" class="btn btn-outline" target="_blank">🎥 Watch Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="app">
+                    <div class="project-img">
+                        <img src="wastepro.jpg"
+                            alt="Automation App">
+                    </div>
+                    <div class="project-info">
+                        <h3>Automation App</h3>
+                        <p>Task automation dashboard that connects multiple services and APIs to streamline business
+                            workflows with minimal user input.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Blazious/FRONT-END-AUTOAMTION" class="btn">💻 View Code</a>
+                            <a href="wastepro.mp4" class="btn btn-outline" target="_blank" >🎥 Watch Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Website Projects -->
+                <div class="project-card" data-category="website">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                            alt="Ecosmart">
+                    </div>
+                    <div class="project-info">
+                        <h3>Ecosmart</h3>
+                        <p>Green tech website showcasing sustainable solutions with interactive product demos and carbon
+                            footprint calculator.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Blazious/eco-smart-front-end-" class="btn">💻 View Code</a>
+                            <a href="https://ecosmart-bmm.netlify.app/" class="btn btn-outline">🔗 Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="website">
+                    <div class="project-img">
+                        <img src="nyali.png"
+                            alt="Nyali Capital">
+                    </div>
+                    <div class="project-info">
+                        <h3>Nyali Capital</h3>
+                        <p>Financial services website with secure client portal, investment calculators, and market
+                            analysis tools.</p>
+                        <div class="project-links">
+                            <a href="" class="btn">💻 View Code</a>
+                            <a href="https://nyali-capital-website.vercel.app/" class="btn btn-outline">🔗 Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="website">
+                    <div class="project-img">
+                        <img src="kayy.png"
+                            alt="Kayy Vogue">
+                    </div>
+                    <div class="project-info">
+                        <h3>Kayy Vogue</h3>
+                        <p>Fashion brand e-commerce site with virtual try-on features, AR viewing, and seamless checkout
+                            process.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Blazious/kayyvogue" class="btn">💻 View Code</a>
+                            <a href="https://serene-hamster-f43733.netlify.app/" class="btn btn-outline">🔗 Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publication Section -->
+    <section id="publication">
+        <div class="container">
+            <h2 class="section-title">My Publication</h2>
+            <div class="publication-card">
+                <h3>What is True Automation</h3>
+                <p class="subtitle">A System Engineering Mechanism or Tool Orchestration Mechanism</p>
+                <p>This paper explores the fundamental differences between superficial automation (simple tool
+                    orchestration) and true system-level automation that considers the entire engineering lifecycle. It
+                    proposes a framework for evaluating automation solutions based on their ability to adapt to changing
+                    requirements without human intervention.</p>
+                <p>The publication seeks to help builders understand the automation ecosystem.</p>
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7342503179068071936/" class="btn">View Article </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+
+
+                <div class="social-links">
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> [Your Name]. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script src="scripts.js" defer></script>
+
+
+</body>
+
+</html>
